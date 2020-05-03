@@ -11,6 +11,12 @@ pipeline {
                 git branch: 'master', credentialsId: 'gitlab_new', url: 'https://github.com/Sardeni/my-first-project-at.git'
             }
         }
+
+        stage('Clean') {
+            steps {
+                sh "mvn clean"
+            }
+        }
         stage('run tests') {
             steps {
                 sh "mvn test -Dselenide.browser=chrome -Dselenide.remote=http://192.168.0.11:4444/wd/hub"
