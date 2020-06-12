@@ -4,6 +4,20 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import org.junit.Test;
 
+//Шаги теста:
+//        ```
+//        1.Зайти на сайт https://geekbrains.ru/courses
+//        2.Нажать на кнопку Курсы
+//        3.Проверить что страница Курсы открылась
+//        4.Повторить для
+//        1.Курсы
+//        2.Вебинары
+//        3.Форум
+//        4.Блог
+//        5.Тесты
+//        6.Карьера
+
+
 public class FirstTest {
 
     @Test
